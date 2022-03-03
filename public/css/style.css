@@ -1,0 +1,308 @@
+:root {
+    /* COLORES */
+    --color-amarillo : #EAC926;
+    --color-azul : #03264C;
+    --color-celeste : #1259c3;
+    --color-grisOscuro : #666;
+    --color-grisClaro : #ebebeb;
+    --color-verde : #39b54a;
+    /* FUENTES */
+    --font-roboto : 'Roboto', sans-serif;
+    /* Tamaños de fuentes */
+    --cuerpos-de-texto : 12px;
+    --oferta : 24px;
+    --precios : 18px;
+    --descuentos-descripciones : 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+ font-family: var(--font-roboto);
+ background-color: var(--color-grisClaro);
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*HEADER */
+
+header {
+background-color: var(--color-amarillo); 
+display: flex; 
+flex-wrap: wrap; 
+padding: 30px 15px 10px 15px; 
+align-items: center; 
+justify-content: center; 
+}
+
+.burger-menu i {
+    background-color: var(--color-celeste);
+    border-radius: 5px; 
+    color: white; 
+   
+    padding: 11px 13px; 
+    font-size: 25px;
+ 
+   
+}
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+ 
+header img {
+    width: 45% ;
+  margin : 0 10px 0 0;
+  padding: 0;
+  display: inline;
+}
+ 
+header #buscador {
+    padding-left: 10px;
+    border-radius:  5px 0 0 5px;
+    border: none;
+  
+    width: 40%;
+    height: 40px;
+    font-size: 15px;
+    display: inline;
+}
+
+header #lupa{
+    background-color: white;
+    padding: 12px 5px;
+    border-radius: 0 5px 5px 0;
+    color: var(--Gris-oscuro);
+}
+
+header p {
+    font-size: 15px;
+margin:15px 5%;
+width: 100%;
+text-align: center;
+}
+
+header nav ul li a {
+   text-decoration: none;
+   color: black;
+} 
+
+#nav {
+   display: none; /*no se ve en version celu */
+}
+
+#img-publicidad img{
+    width: 100%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+}
+
+main section {
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main section article {
+    max-width: auto;
+    max-height: auto;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    margin: 10px auto;
+    padding: 0;
+    border-top: 1px solid var(--color-grisClaro);
+    background-color: white;
+    position: relative;
+}
+
+main h2{
+    text-align: center;
+    color: var(--color-grisOscuro);
+}
+
+main section article img{
+    width: 90%;
+ }
+main section article i{
+    color: var(--color-verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-verde);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 75px;
+}
+
+main section article strong{
+    margin: 0;
+    padding: 10px 0px 20px 20px;
+    color: var(--color-grisOscuro);
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+main section article hr{
+    border: 1px solid rgb(243, 243, 243);
+    width: 100%;
+}
+
+main section article p{
+    margin: 10px 5px 5px 20px;
+    font-size: 18px;
+    font-weight: 501;
+    display: inline-block;
+}
+
+.oferta{
+    color: var(--Verde);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+
+footer{
+    margin: 0px 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer section{
+    padding-top: 20px;
+    background-color: white;
+}
+footer article i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--color-celeste);
+}
+footer article{
+    margin: 50px 35px;    
+}
+footer article h2{
+    margin-bottom: 0;
+    font-size: 12px;
+    color: var(--color-grisOscuro);
+}
+footer article  p{
+    margin-top: 0;
+    padding-top: 0;
+    
+    font-size: 10px;
+    color: var(--color-grisOscuro);
+}
+
+
+
+
+@media  (min-width: 576px){
+
+    header img{
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+        text-align: left;
+        width: 30%;
+    }
+    header #buscador{
+        margin: 0px;
+        width: 23%;
+    }
+    header p{
+        padding: 0;
+        margin: 0;
+        width: 40%;
+        font-size: 12px;
+        text-align: right;
+    }
+    header nav {
+        margin-top: 20px;
+        font-size: 12px;
+        width: 100%;
+        display: inline-flex;
+        padding: 5px;
+    }
+    header nav ul li i{
+        margin: 0 10px 0 0;
+    }
+    header nav ul li{
+        font-size: 11px;
+        margin-right: 10px;
+    }    
+    .burger-menu{
+        display: none;
+    }
+    header nav ul{
+        list-style: none;
+        display: flex;
+    }
+    #nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    main h2{
+        text-align: start;
+        margin: 15px 8%;
+    }
+    main section {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main section article img{
+        width: 200px;
+    }
+    main section article{
+        max-width: 200px;
+        margin: 10px 20px;
+    }
+    main section article .oferta{
+        font-size: 11px;
+    }
+    main section article i{
+        right: 10px;
+        font-size: 15px;
+    }
+} 
+
+    
+
+
+@media (min-width: 1080px){
+    
+
+    header nav ul li{
+        font-size: 20px;
+     margin-right: 15px; 
+      
+    }
+    header #buscador{
+        width: 25%;
+    }
+    main h2{
+        margin-left: 45px;
+    }
+    header p{
+        font-size: 20px;
+    }
+  
+}
